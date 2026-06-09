@@ -2,7 +2,7 @@ import urllib.request
 import urllib.parse
 import json
 
-WEBHOOK_URL = "https://discord.com/api/webhooks/1513870002267095182/pT0s6b7sZdumysbJzOPJYfEeWIWA-AiglR8nndNm7wpHwu1ftX510g_m63OtdWqyvz0R"
+WEBHOOK_URL = "https://discord.com/api/webhooks/1513872994706133003/gUNngshQj5JSW7jMOlmlY0s4t9ZRfGLPVmdDc7DDFsttLcW-rUS4nMlk-ghs4PvMBPzW"
 
 def send_discord_message(message):
     payload = json.dumps({"content": message}).encode("utf-8")
