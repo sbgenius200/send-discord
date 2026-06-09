@@ -23,7 +23,7 @@ jobs:
       - name: Build EXE
         run: pyinstaller --onefile --name discord_sender discord_sender.py
 
-      - name: Run EXE        # ← added this step
+      - name: Run EXE
         run: dist\discord_sender.exe
 
       - name: Upload EXE
