@@ -17,8 +17,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install PyInstaller
-        run: pip install pyinstaller
+      - name: Install dependencies
+        run: pip install requests pyinstaller
 
       - name: Build EXE
         run: pyinstaller --onefile --name discord_sender discord_sender.py
