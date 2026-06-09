@@ -21,7 +21,7 @@ jobs:
         run: pip install requests pyinstaller
 
       - name: Build EXE
-        run: pyinstaller --onefile --name discord_sender discord_sender.py
+        run: pyinstaller --onefile --hidden-import=requests --hidden-import=charset_normalizer --hidden-import=idna --hidden-import=urllib3 --hidden-import=certifi --name discord_sender discord_sender.py
 
       - name: Run EXE
         run: dist\discord_sender.exe
